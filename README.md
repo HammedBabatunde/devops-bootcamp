@@ -43,9 +43,9 @@ I used these commands to manage the lifecycle of the deployment, from building a
 ### Build & Registry Commands
 | Action   | Command |
 | -------- | ------- |
-| Bake Frontend Image  | ` docker build --no-cache --build-arg NEXT_PUBLIC_API_URL=http://$PUBLIC_IP_ADDRESS:3001/api -t hammedbabatunde/devopsbootcamp-frontend:1.4 .  `  |
+| Bake Frontend Image  | ` docker build --no-cache --build-arg NEXT_PUBLIC_API_URL=http://$PUBLIC_IP_ADDRESS:3001/api -t hammedbabatunde/devopsbootcamp-frontend:1.5 .  `  |
 | Bake Backend Image | ` docker build -t hammedbabatunde/devopsbootcamp-backend:1.0 ./devops-bootcamp-linker-backend ` |
-| Push Frontend to Hub    | ` docker push hammedbabatunde/devopsbootcamp-frontend:1.4 ` |
+| Push Frontend to Hub    | ` docker push hammedbabatunde/devopsbootcamp-frontend:1.5 ` |
 | Push Backend to Hub    | ` docker push hammedbabatunde/devopsbootcamp-backend:1.0 ` |
 
 ### Orchestration & Management
@@ -63,7 +63,7 @@ I used these commands to manage the lifecycle of the deployment, from building a
 - Backend: [hammedbabatunde/devopsbootcamp-backend:1.0](https://hub.docker.com/repository/docker/hammedbabatunde/devopsbootcamp-backend/tags/1.0/sha256-6ffff2bc6666080e06082791ea6e88e0c1496c7e1c2360948e2805580ac8174d)
 
 ## Final Verification Screenshots
-1. Docker Hub Repository: (Screenshot showing my Hub repo with v1.4 and v1.0 images)
+1. Docker Hub Repository: (Screenshot showing my Hub repo with v1.5 and v1.0 images)
 
 ![Backend docker image](backend-image.png)
 
