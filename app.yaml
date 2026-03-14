@@ -1,12 +1,14 @@
 services:
   frontend:
-    # IMPORTANT: Use the tag you built with the AWS IP baked in
-    image: hammedbabatunde/devopsbootcamp-frontend:1.0
+    
+    image: hammedbabatunde/devopsbootcamp-frontend:1.5
     container_name: linker-frontend
+    command: npx next start -H 0.0.0.0 -p 3000
     ports:
       - "3000:3000"
+    env_file: .env
     environment:
-      - NEXT_PUBLIC_API_URL=http://16.16.26.47:3001/api
+      - NEXT_PUBLIC_API_URL=http://${PUBLIC_IP_ADDRESS}:3001/api
     depends_on:
       - backend
 
@@ -18,7 +20,7 @@ services:
     env_file: .env
     environment:
       - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@postgres:5432/${DB_NAME}?schema=public
-      - FRONTEND_ORIGIN=http://16.16.26.47:3000
+      - FRONTEND_ORIGIN=http://${PUBLIC_IP_ADDRESS}:3000
     depends_on:
       postgres:
         condition: service_healthy
