@@ -60,15 +60,19 @@ I used these commands to manage the lifecycle of the deployment, from building a
 ## My Docker Hub Repositories
 - Frontend: [hammedbabatunde/devopsbootcamp-frontend:1.5](https://hub.docker.com/repository/docker/hammedbabatunde/devopsbootcamp-frontend/tags/1.5/sha256:7b16123fe96f84572da3f60f96245820a988c036d59c4d908b368cf1b23a7af2)
 
-- [Backend: hammedbabatunde/devopsbootcamp-backend:1.0](https://hub.docker.com/repository/docker/hammedbabatunde/devopsbootcamp-backend/tags/1.0/sha256-6ffff2bc6666080e06082791ea6e88e0c1496c7e1c2360948e2805580ac8174d)
+- Backend: [hammedbabatunde/devopsbootcamp-backend:1.0](https://hub.docker.com/repository/docker/hammedbabatunde/devopsbootcamp-backend/tags/1.0/sha256-6ffff2bc6666080e06082791ea6e88e0c1496c7e1c2360948e2805580ac8174d)
 
 ## Final Verification Screenshots
 1. Docker Hub Repository: (Screenshot showing my Hub repo with v1.4 and v1.0 images)
 
+![Backend docker image](backend-image.png)
 
+![Frontend docker image](frontend-image.png)
 
+2. Application in Browser: (Screenshot of the live site running at http://13.61.134.145:3000)
 
-2. Application in Browser: (Screenshot of the live site running at http://16.16.26.47:3000)
+![Application image](Application.jpeg)
 
 3. Docker Process Status: (Screenshot of my docker ps output showing three healthy containers)
 
+![Docker containers image](docker-containers.png)
