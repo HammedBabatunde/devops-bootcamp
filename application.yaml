@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/HammedBabatunde/devops-bootcamp.git
-    targetRevision: HEAD
+    targetRevision: argocd
     path: dev
   destination: 
     server: https://kubernetes.default.svc
